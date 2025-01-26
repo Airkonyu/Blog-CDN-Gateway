@@ -17,8 +17,8 @@ export default {
         if (env.URL) urls = await ADD(env.URL);
         
         const ads = env.ADS || 'google.com, pub-9350003957494520, DIRECT, f08c47fec0942fa0';
-        const 网站图标 = env.ICO || 'http://dogecloud-image.konyu.top/hutao.webp';
-        const 网站头像 = env.PNG || 'http://dogecloud-image.konyu.top/avatar.jpg';
+        const 网站图标 = env.ICO || 'https://cf-image.konyu.top/avatar/hutao.webp';
+        const 网站头像 = env.PNG || 'https://cf-image.konyu.top/avatar/hutao.webp';
         const 网络备案 = env.BEIAN || `<a href='https://beian.miit.gov.cn/'>蜀ICP备2024110925号</a>`;
         const 网页标题 = env.TITLE || 'BlogCDN 智能访问网关';
         const 站点名称 = env.NAME || '雨江月阁';
@@ -32,7 +32,7 @@ export default {
             return fetch(网站图标);
         } else {
             // 先测速，不加载背景图片
-            let img = 'http://dogecloud-image.konyu.top/wallpaper/blda.webp'; // 默认图片
+            let img = 'https://cf-image.konyu.top/wallpaper/blda.webp'; // 默认图片
             if (env.IMG) {
                 const imgs = await ADD(env.IMG);
                 img = imgs[Math.floor(Math.random() * imgs.length)];
