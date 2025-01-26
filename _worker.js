@@ -32,7 +32,7 @@ export default {
             return fetch(网站图标);
         } else {
             // 先测速，不加载背景图片
-            let img = 'https://t.alcy.cc/ai; // 默认图片
+            let img = 'http://dogecloud-image.konyu.top/wallpaper/blda.webp'; // 默认图片
             if (env.IMG) {
                 const imgs = await ADD(env.IMG);
                 img = imgs[Math.floor(Math.random() * imgs.length)];
